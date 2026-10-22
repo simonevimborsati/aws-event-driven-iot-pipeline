@@ -59,7 +59,7 @@ Il repository è configurato con una pipeline automatizzata che esegue i seguent
 ├── .github/workflows/    # Pipeline di automazione GitHub Actions
 ├── modules/             # Moduli Terraform riutilizzabili (API, Lambda, DB)
 ├── main.tf              # Entry point e orchestrazione dei moduli
-├── provider.tf          # Configurazione del provider AWS e backend
+├── provider.tf          # Configurazione del provider AWS
 ├── outputs.tf           # Output dell'URL pubblico dell'API Gateway
 └── README.md            # Documentazione del progetto
 ~~~
