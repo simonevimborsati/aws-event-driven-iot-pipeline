@@ -14,15 +14,17 @@ graph TD
     API -->|Triggers| Lambda[⚡ AWS Lambda Function]
     Lambda -->|Writes Data| DynamoDB[(🗄️ Amazon DynamoDB)]
 
-    subgraph AWS Cloud
+    subgraph AWS_Cloud[AWS Cloud]
         API
         Lambda
         DynamoDB
     end
 
-    subgraph CI/CD Pipeline
-        GHA[🤖 GitHub Actions] -->|Terraform Apply| AWS Cloud
+    subgraph CICD[CI/CD Pipeline]
+        GHA[🤖 GitHub Actions]
     end
+
+    GHA -->|Terraform Apply| AWS_Cloud
 ~~~
 
 ---
