@@ -60,6 +60,6 @@ Il repository è configurato con una pipeline automatizzata che esegue i seguent
 ├── modules/             # Moduli Terraform riutilizzabili (API, Lambda, DB)
 ├── main.tf              # Entry point e orchestrazione dei moduli
 ├── provider.tf          # Configurazione del provider AWS e backend
-├── outputs.tf           # Output delle risorse (URL API Gateway, ARN, ecc.)
+├── outputs.tf           # Output dell'URL pubblico dell'API Gateway
 └── README.md            # Documentazione del progetto
 ~~~
